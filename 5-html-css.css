@@ -1,3 +1,31 @@
+#html {
+  border-right: 4px solid var(--color-light-bg);
+}
+.html-css {
+  display: inline-flex;
+  margin: 3vmax 0;
+  gap:2vmax;
+}
+
+.html-css__logo{
+  width: 15vmax;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
 }
 
