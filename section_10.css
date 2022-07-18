@@ -19,13 +19,15 @@
   border-spacing: 0.5vmax; 
   font-size: 1vmax;
 }
-.section-10__info dt{
+.section-10__info th{
   padding-right: 2vmax;
   color: var(--main);
+  font-weight: 100;
+  text-align: left;
 }
 .section-10__info caption{
   text-align: left;
-  font-size: 1.3vmax;
+ 
   padding-left: 30px;
   font-weight: bold;
 }
