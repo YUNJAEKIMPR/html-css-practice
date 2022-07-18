@@ -1,0 +1,55 @@
+.main__section-10{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  padding-bottom: 2vmax;
+}
+.section-10__nav ul li{
+  display: inline-block;
+  font-size: 1vmax; 
+  padding: 0.5vmax;
+  padding-top: 1vmax;
+  
+}
+.section-10__info{
+  grid-row: 2/-1;
+}
+.section-10__info table{
+  border-spacing: 0.5vmax; 
+  font-size: 1vmax;
+}
+.section-10__info dt{
+  padding-right: 2vmax;
+  color: var(--main);
+}
+.section-10__info caption{
+  text-align: left;
+  font-size: 1.3vmax;
+  padding-left: 30px;
+  font-weight: bold;
+}
+.section-10__channel{
+  display: flex;
+  padding: 2vmax;
+  gap: 2vmax;
+  font-size: 1vmax;
+  padding-left: 600px;
+
+}
+.section-10__cs{
+  font-size: 1vmax;
+}
+.section-10__cs table{
+  border-spacing: 0.5vmax;
+}
+.section-10__cs th{
+  padding-right: 2vmax;
+  color: var(--main);
+  font-weight: lighter;
+}
+.section-10__cs caption{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bold;
+}

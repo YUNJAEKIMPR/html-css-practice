@@ -1,0 +1,38 @@
+.main__section-6{
+  background-color: rgb(70, 215, 183);
+display: flex;
+position: relative;
+
+justify-content: space-around;
+}
+.section-6__text{
+  display: flex;
+  flex-direction: column;
+  gap:1vmax;
+  padding:3vmax;
+}
+.section-6__title-sub{
+  color: white;
+  font-size: 1vmax;
+}
+.section-6__title-main{
+  font-size: 1.5vmax;
+  font-weight: bold;
+}
+.section-6__link{
+  font-size: 0.9vmax;
+  color: white;
+  position:relative;
+  top: 1vmax;
+}
+.section-6__link:hover{
+  text-decoration: underline;
+  color: gold;
+  font-weight: bold;
+}
+.section-6__img img{
+  width: 30vmax;
+  position:absolute;
+  bottom: 0;
+  right: 10vmax;
+}

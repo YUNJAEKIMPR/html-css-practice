@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url(./nav.css);
+@import url(./section_1.css);
+@import url(./section_2.css);
+@import url(./section_3.css);
+@import url(./section_4.css);
+@import url(./section_5.css);
+@import url(./section_6.css);
+@import url(./section_7.css);
+@import url(./section_8.css);
+@import url(./section_9.css);
+@import url(./section_10.css);
+@import url(./footer.css);
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*reset*/
+* {margin: 0; padding: 0; box-sizing: border-box; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {text-decoration: inherit; color: inherit;}
+li {list-style: none;}
+img {vertical-align: middle;}
+a img {border: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+input[type="button"]{
+    all:initial;
+}
+
+body { 
+    /* font-family: 'Noto Sans KR', sans-serif  */
+    font-family: 'GmarketSansMedium', sans-serif; 
+}
+.ft-gm { 
+    font-family: 'GmarketSansMedium', sans-serif; 
+}
+
+.ft-gm-bold { 
+    font-family: 'GmarketSansBold', sans-serif; 
+}
+
+::selection {
+    background-color: var(--main);
+    color: white;
+}
+
+:root {
+
+    --main: #f44502;
+    --sub: #06377b;
+    --white: #ffffff;
+    --gray: #eee;
+    --light-gray: #f7f8fb;
+    --bg-light: #ffeee4;
+    --peach-orange: #ffc78e;
+}

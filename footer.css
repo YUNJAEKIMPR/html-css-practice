@@ -1,0 +1,7 @@
+.footer__copyright{
+  background-color: var(--main);
+  padding: 2vmax;
+  color: white;
+  text-align: center;
+  font-size: 1vmax;
+}
