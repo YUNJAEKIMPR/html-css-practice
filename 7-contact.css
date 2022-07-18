@@ -1,3 +1,128 @@
+.contact{
+  background-color: var(--color-light-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3vmax;
+  padding-top: 1vmax;
+  padding-bottom: 2vmax;
+
+}
+.contact__title-1{
+  color: olivedrab;
+  font-size: 1.5vmax;
+}
+.contact__title-2{
+  font-size: 2.5vmax;
+  font-weight: bold;
+}
+.contact__option{
+  font-size: 1.2vmax;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+} 
+.contact__info{
+  color: white;
+}
+.option__table{
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.option__table td{
+  width: 15vmax;
+  height: 5vmax;
+
+}
+
+.contact__info{
+  background-color: var(--color-main);
+}
+.contact__msg{
+  background-color: white;
+}
+.contact__list{
+  display: flex;
+  justify-content: center;
+  font-size: 1vmax;
+}
+.list__table{
+  width: 30vmax;
+  table-layout: fixed;
+  height: 5vmax;
+  border-collapse: separate;
+  border-spacing: 1vmax;
+  
+}
+
+.list__table th{
+  border-right: 4px solid rgb(251, 210, 205);
+}
+.list__table a:hover{
+  color: var(--color-main);
+  text-decoration: underline var(--color-main);
+}
+
+footer{
+  background-color: var(--color-lighter);
+  font-size: 1vmax;
+  padding: 2em;
+  color: white;
+  text-align: center;
+}
+
+
+.contact__info-2{
+  background-color: white;
+}
+.contact__msg-2{
+  background-color: var(--color-main);
+  color:white;
+}
+.contact__input{
+  display: grid;
+  grid-template-rows: 3vmax 4vmax;
+  grid-template-columns: 30vmax 1fr 1fr 30vmax;
+  gap: 1vmax;
+}
+#contact__msg{
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  border: solid 1px var(--color-lighter);
+
+}
+#contact__email{
+  grid-column: 3/4;
+  border: solid 1px var(--color-lighter);
+
+}
+
+#contact__msg::placeholder,#contact__email::placeholder{
+  color: var(--color-lighter);
+  font-size: 1vmax;
+}
+
+#contact__button{
+  grid-column: 3/4;
+  background-color: var(--color-sub);
+  border: 1px solid var(--color-sub);
+  color: white;
+  font-size: 1vmax;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
 }
 

@@ -3,11 +3,11 @@ main #about {
   text-align: center;
 }
 
-.section__tag {
+.section__tag{
   font-size: 2vmax;
   color: var(--color-sub)
 }
-.section__title {
+.section__title{
   font-size: 3.5vmax;
   font-weight: bold;
   color: var(--color-text);
@@ -24,7 +24,11 @@ main{
 main{
   grid-column: 1/-1;
 }
-
+.html-css {
+  display: inline-flex;
+  margin: 3vmax 0;
+  gap:2vmax;
+}
 
 
 

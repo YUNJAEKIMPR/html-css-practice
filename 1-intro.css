@@ -23,7 +23,7 @@
 
 .intro__type{
   color: white;
-  font-size: 8em;
+  font-size: 3vmax;
   font-weight: bold;
   font-style: var(--font-code);
   display: inline-flex;
