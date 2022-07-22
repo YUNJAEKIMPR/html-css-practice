@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <!-- home link  -->
+          <div class="header_homelink" >
+            <a id="header_homelink" href="./idex.html">
+              <h1 id="name">
+                Yunjae Kim
+                <span id="title">
+                  / rmit student
+                </span> 
+              </h1> 
+            </a>
+          </div>
+    <!-- nav_menu bar -->
+          <div class="header_nav">
+            <input class="header_menu_btn" type="checkbox" name="menu" id="menu">
+            <div class="header_nav_items">
+              <ul>
+                <li>
+                  <a href="./idex.html">
+                    about me
+                  </a>
+                </li>
+                <li>
+                  <a href="./resume.html">
+                    resume
+                  </a>
+                </li>
+                <li>
+                  <a href="./poject.html">
+                    projects
+                  </a>
+                </li>
+                <li>
+                  <a href="./contact.html">
+                    contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+      </header>
+      <main class="contact">
+        <section class="contact_1">
+          <h2>
+            Let's Talk
+          </h2>
+    <!-- contact form  -->
+        <div class="contact_form">
+          <form action="sever.html" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return false">
+            <div class="form_left">
+              <div class="contact_first_name">
+                <div class="label">
+                  <label for="first_name">
+                    first name
+                  </label>
+                </div>
+                <div class="input">
+                  <input type="text" id="first_name" name="first_name" maxlength="50" title="please write your first name">
+                </div>
+              </div>
+              <div class="contact_last_name">
+                <div class="label">
+                  <label for="last_name">
+                    last name
+                  </label>
+                </div>
+                <div class="input">
+                  <input type="text" name="last_name" id="last_name" required maxlength="50" title="pls input ur lastname">
+                </div>
+              </div>
+              <div class="contact_email">
+                <div class="label">
+                  <label for="email">
+                    email
+                  </label>
+                </div>
+                <div class="input">
+                  <input type="email" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="contact_subject">
+                <div class="label">
+                  <label for="subject">
+                    subject
+                  </label>
+                </div>
+                <div class="input">
+                  <input type="text" name="subject" id="subject" required maxlength="50">
+                </div>
+  
+              </div>
+
+            </div>
+            <figure class="form_right" aria-hidden="true">
+              <div>
+                <img src="../img/pexels-ylanite-koppens-1809342.jpg" alt="mail photo" width="50px">
+              </div>
+
+              <!-- citation (Ylanite Koppens, 2019 jan) -->
+            </figure>
+              
+            
+              <div class="contact_msg">
+                <div class="label">
+                  <label for="msg">
+                    message
+                  </label>
+                </div>
+                <div class="input">
+                  <textarea 
+                  name="msg_pc" id="msg_pc" cols="50" rows="10"></textarea>
+                  <textarea 
+                  name="msg_mobile" id="msg_mobile" cols="30" rows="30"></textarea>
+                </div>
+                
+  
+              </div>
+              <div class="contact_btn">
+                <input type="button" value="submit">
+  
+              </div>
+            
+
+          </form>
+
+        </div>
+
+        </section>
+      
+    
+      </main>
+            <!-- footer -->
+  <footer class="footer">
+    <div class="footer_left">
+      2023 by Yunjae Kim.
+    </div>
+    <div class="footer_right">
+      <table>
+        <tr>
+          <th>call</th>
+          <th>write</th>
+          <th>follow</th>
+        </tr>
+        <tr>
+          <td>123-456-7890</td>
+          <td>info@mysite.com</td>
+          <td>
+            <a id="insta_link" href="http://">
+              <img id="insta_icon" src="../img/icon-g0abd18a8a_1920.png" alt="insta link">
+            </a>
+            <a id="facebook_link" href="#">
+              <img id="facebook_icon" src="../img/facebook-g61f4b97e2_1920.png" alt="facebooklink">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </footer>
+  
+</body>
+</html>

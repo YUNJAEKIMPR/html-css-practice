@@ -1,0 +1,177 @@
+.resume{
+  background-color: antiquewhite;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10vw;
+  align-items: center;
+  padding: 3vmax;
+}
+.resume h2, h3{
+  font-size: 4vmax;
+  font-family: "ibarra_italic";
+}
+div[class*="resume_section"] h3::before, div[class*="resume_section"] h3::after{
+  content: "-";
+}
+
+
+@media (min-width:768px) {
+  div[class*="resume_section"]{
+    display: flex;
+    flex-direction:column;
+    gap: 3vmax;
+    justify-content: center;
+    align-items: baseline;
+  }
+  div[class*="resume_section"] h3{
+    font-size: 2vmax;
+    font-weight: 100;
+  }
+  
+  div[class^="resume_card"]{
+    width: 40vmax ;
+    background-color: white;
+    padding:10%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 10% 1fr;
+    gap:1vmax;
+    box-shadow: 2px 2px 2px gray;
+  }
+  div[class*="resume_card"] h4{
+    grid-column: 1/-1; 
+    color: skyblue;
+    
+  }
+  
+  div[class*="resume_card"] .card-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    gap: 10%;
+   
+  }
+  div[class*="resume_card"] .card-left div:first-child{
+    font-size: 2vmax;
+    padding-bottom: 10px;
+    
+  }
+  div[class*="resume_card"] .card-right{
+  
+    text-align: justify;
+    
+  }
+  div[class*="card-left"] div:nth-child(2),div[class*="card-left"] div:nth-child(3){
+    color: gray;
+  }
+  
+  #card_5{
+    width: 44vmax;
+    display: flex;
+    flex-direction: column;
+    gap:3vmax;
+    padding:3vmax;
+    
+  }
+  #card_5 h4{
+    font-size: 1.5vmax;
+    font-weight: 400;
+    color: black;
+  }
+  #card_5 div ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:2vmax;
+    position: relative;
+    left: 2vmax;
+
+    /* why I cannot use align center and justify center here  */
+    
+    color: gray;
+    
+  }
+  #card_5 div ul li{
+   list-style:"# "; 
+   
+  }
+
+
+  
+}
+@media (max-width:769px) {
+
+  .resume_section-1,.resume_section-2, .resume_section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmax;
+  }
+  .resume h2{
+    font-size: 38px;
+  }
+  .resume h3{
+    font-size: 20px;
+  }
+  .resume h3::after,.resume h3::before{
+    content: "-";
+  }
+  div[class*="resume_card"]{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50vmax;
+    padding:10%;
+  }
+  .card-left{
+    padding:1vmax 0;
+  }
+  .card-left div{
+    padding:1vmax 0;
+  }
+  .card-left div:first-child{
+    font-size: 3vmax;
+  }
+  .card-left div:nth-child(2),.card-left div:nth-child(3){
+    color: gray;
+    font: 10.5vmax;
+  }
+  div[class*="resume_section"] h4{
+    color: skyblue;
+    position:relative;
+    top:-10px;
+  }
+
+  .card-right div{
+    text-align: justify;
+    margin-top: 3vmax;
+  }
+  #card_5{
+    all:unset;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: white;
+    width: 50vmax;
+    padding:10%;
+
+  }
+  #card_5 h4{
+    color: black;
+  }
+  #card_5 ul{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+  }
+  #card_5 li{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    list-style: "#";
+  };
+  
+
+}

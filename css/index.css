@@ -1,0 +1,387 @@
+
+.header {
+  height: var(--height-toolbar);
+  
+  background-color: white;
+  position: sticky;
+  top:0; 
+  z-index: 1;}
+  .header_homelink #title{ 
+    color: gray;
+    font-weight: lighter;
+    font-size: 1.5vmax;
+    font-family: "ibarra";
+  }
+
+.header h1,.section_1 h2{
+  font-family: "ibarra_italic";
+}
+
+
+
+  .btn{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 2em;
+    text-align:center;
+  }
+
+  .header_homelink{
+    font-size: var(--font-size-tag);
+    font-weight: bold;
+    font-family: "ibarra_italic";
+  }
+  .section_1{
+    height: 100vh;
+    background-image: url(../img/tianjin-g7f73f53d0_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_nav_items li:hover{
+    color:skyblue;
+    font-weight: bold;
+  }
+
+  #profile{
+    width: 17vw;
+    border-radius: 50%;
+    position:relative;
+    top:50px
+  }
+  #facebook_icon{
+    width: 20px;
+  }
+  #insta_icon{
+    width: 23px;
+  }
+
+
+  
+
+
+@media (min-width:769px) {
+  
+   .header{
+    width: 97%;
+   }
+  
+  .header_menu_btn{
+    display: none;
+  }
+  .header_nav_items li{
+    display: inline-block;
+    font-size: var(--font-size-larger);
+    padding: 0 10px;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+ 
+  
+  
+  
+
+  .section_1 #insta_icon{
+    vertical-align: -13px;
+  }
+  .section_1-card{
+    width: 50vmax;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    box-shadow: 2px 2px 2px black;
+  
+    
+  }
+  .card_left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  .card_left h2{
+    font-size: 22px;
+  }
+  .card_left h3{
+    color: gray;
+  }
+  .card_left-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+  }
+  .card_left-2 span{
+    color: skyblue;
+  
+    font-weight: bold;
+    position:relative;
+    top: -5px;
+  }
+  .card_left-3{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+  }
+  
+  .card_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  div[class*="card_right-"]{
+    margin:10px;
+  }
+  .card_right-1{
+    font-family: "ibarra_italic";
+    padding: 10px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-size: var(--font-size-larger);
+  
+  }
+  .card_right-1 h1{
+    font-size: 30px;
+    font-weight: 800;
+    
+  }
+  .card_right-1 h2{
+    font-weight: 100;
+  }
+  .card_right-2{
+    display: flex;
+    gap:10px;
+    position:relative;
+    top:-20px
+  }
+ 
+  .section-1_link-1 .btn{
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    color: white;
+    
+  }
+  .card_right-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position:relative;
+    bottom:30px;
+    padding: 0 15px;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+    background-color: white;
+    
+  
+  }
+  #main_footer{
+    box-shadow: inset 2px 2px 2px black;
+  }
+  .footer_right td,.footer_right th{
+  
+    padding: 5px 15px
+  }
+  .footer_right #insta_icon{
+    vertical-align: -5px;
+    padding-right: 3px;
+  }
+  .footer_right #facebook_icon{
+    padding-left: 3px;
+    vertical-align: -1px;
+  }
+
+  
+  
+
+  
+}
+@media (max-width:768px) {
+
+  .header_homelink{
+    font-size: 3vmax;
+    padding-left: 3vmax;
+  }
+  .header_homelink #title{
+    font-size: 2vmax;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .header_nav_items{
+    display: none;
+  }
+
+  .header_menu_btn:checked+.header_nav_items{
+    display: block;
+    background-color: aliceblue;
+    position: absolute;
+    right:3vw;
+    top:9vw;
+    width: 100vw;
+    height: 100vh;
+    font-size: 5vmax;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .header_menu_btn:checked+.header_nav_items li{
+    padding-top: 5vmax;
+    padding-bottom: 3vmax;
+
+    border-bottom: 1px solid white;
+    transition: all 0.5s;
+  }
+  .header_menu_btn:checked+.header_nav_items li:hover{
+    color: skyblue;
+  }
+  .header_menu_btn:checked{
+    background-image: url(../img/x-g3b8516a80_1280.png);
+  }
+
+
+
+  .header_menu_btn{
+    all:unset;
+    display: block;
+    background-image: url(../img/hamburger-icon-g55aa2fd17_1280.png);
+    /*(thehalaldesign,2021,Hambuger_icon,indonesia)  */
+    width: 10vmax;
+    height: var(--height-toolbar);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    
+
+  }
+
+  .header_nav{
+    position:relative;
+    top:20px;
+    left: 20px;
+  }
+  .section_1-card{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    
+    font-size: 1vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:2vmax;
+  }
+  .card_left-1{
+    position:relative;
+    top:-10vmax;
+
+  }
+
+  .section_1-card #profile{
+    width: 20vmax;
+  }
+.card_left-2{
+  text-align: center;
+  font-size: 2vmax;
+}
+.card_left-2 span{
+  display: none;
+}
+.card_left-2 h3{
+  font-size: 1vmax;
+  color: gray;
+  padding-top: 1vmax;
+}
+.card_left-3{
+  text-align: center;
+  padding-top: 2vmax;
+}
+.card_left-3 #insta_icon{
+  vertical-align: -4px;
+  width: 3vmax;
+}
+.card_left-3 #facebook_icon{
+  width: 2.5vmax;
+}
+.card_right{
+  border-top: dashed 1px skyblue;
+  padding:7vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 7vmax
+  ;
+  align-items: center;
+  text-align: justify;
+}
+.card_right-1{
+  font-size: 2vmax;
+  color: gray;
+  text-align: center;
+}
+.card_right-1 h2{
+  font-size: 3vmax;
+  padding-bottom: 1vmax;
+  color: black;
+}
+.card_right-2{
+  display: flex;
+  gap:2vmax;
+  
+}
+.section-1_link-1 a{
+  background-color: skyblue;
+  border: skyblue;
+  color: white;
+}
+.footer{
+  font-size: 0.5vmax;
+  display: flex;
+  justify-content: space-between;
+  padding:1vmax
+}
+.footer #insta_icon{
+  width: 2.5vmax;
+  vertical-align: -5px;
+  position: relative;
+  right:2px;
+}
+.footer #facebook_icon{
+  width: 2vmax;
+  position: relative;
+  vertical-align: -2px;
+  
+}
+.footer_right{
+  padding:0vmax;
+}
+.footer td{
+  padding: 0 1vmax;
+}
+
+}
